@@ -32,7 +32,7 @@ st.write("## :green[[PDF 도면 이미지 표시 및 텍스트 추출]]")
 uploaded_file = st.sidebar.file_uploader(":blue[다른 PDF 파일을 업로드 할 수 있습니다 (Drag & Drop)]", type=["pdf"])
 # 파일이 업로드되지 않았을 때 기본 파일 사용
 if uploaded_file is None:
-    uploaded_file = "1.pdf"
+    uploaded_file = "2.pdf"
 
 if isinstance(uploaded_file, str):  # 기본 파일 경로인 경우 (1.pdf)
     file_name = os.path.basename(uploaded_file)
